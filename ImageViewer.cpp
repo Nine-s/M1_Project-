@@ -507,7 +507,7 @@ void ImageViewer::classif()
   std::string temp ="./"+caffe_path+"/build/examples/cpp_classification/classification.bin  ui/NN/de.prototxt  ui/NN/azert.caffemodel  ui/NN/mean.binaryproto  ui/NN/label.txt "+imagePath;
   const char* cmd=temp.c_str();
 
-  //store the result of the command line
+  //execute the command line and store it's result
   char buffer[5000];
   std::string result="";
   FILE *stream=popen(cmd,"r");
@@ -522,7 +522,6 @@ void ImageViewer::classif()
 
   //convert the result
   const char* final=result.c_str();
-  const char* final2=imagePath.c_str();
 
   //display it in a QMessageBox
   QMessageBox::about(this, tr("classification"),tr(final));
