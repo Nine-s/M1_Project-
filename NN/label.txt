@@ -1,5 +1,5 @@
-0 head
-1 left mandibula
-2 pronotum
-3 right mandibula
-4 elytre
+0 Head
+1 Left Mandibule
+2 Pronotum
+3 Right Mandibule
+4 Elytron
