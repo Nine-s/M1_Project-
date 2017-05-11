@@ -1,4 +1,4 @@
-name: "Beetles2Classes"
+name: "Beetles5Classes"
 input: "data"
 input_dim: 10
 input_dim: 3
@@ -49,17 +49,6 @@ layer {
     stride: 2
   }
 }
-#layer {
-#	name: "lrn1"
-#	type: "LRN"
-#	bottom: "pool1"
-#	top: "lrn1"
-#	lrn_param {
-#		local_size: 5
-#		alpha: 0.0001
-#		beta: 0.75
-#	}	
-#}
 layer{
 	name: "conv2"
 	type: "Convolution"
@@ -105,17 +94,6 @@ layer {
     stride: 2
   }
 }
-#layer {
-#	name: "lrn2"
-#	type: "LRN"
-#	bottom: "pool2"
-#	top: "lrn2"
-#	lrn_param {
-#		local_size: 5
-#		alpha: 0.0001
-#		beta: 0.75
-#	}	
-#}
 layer{
 	name: "conv3"
 	type: "Convolution"
